@@ -68,6 +68,32 @@
 			margin: 0.8rem 0;
 		}
 
+		ol {
+			list-style-type: none;
+			counter-reset: item;
+			margin: 0;
+		}
+
+		ol>li {
+			display: table;
+			counter-increment: item;
+			margin-bottom: 0.6em;
+		}
+
+		ol>li:before {
+			content: counters(item, ".") ". ";
+			display: table-cell;
+			padding-right: 0.6em;
+		}
+
+		li ol>li {
+			margin: 0;
+		}
+
+		li ol>li:before {
+			content: counters(item, ".") " ";
+		}
+
 		@media (max-width: 600px) {
 			h1 {
 				font-size: 1.5rem;
@@ -93,174 +119,133 @@
 	<main>
 		<h1>STANDARD TERMS OF BUSINESS (effective August 2025)</h1>
 		<p>The following terms of business apply to all engagements accepted by Cedar Bloom
-				Accounting. All work is carried out under these terms except where changes are expressly agreed in
-				writing.
+			Accounting. All work is carried out under these terms except where changes are expressly agreed in
+			writing.
 		</p>
-		<ol start="1">
+		<ol>
 			<li>Applicable law</li>
-		</ol>
-		<p>1.1Our engagement letter, the
-				schedules of services and our standard terms and conditions of business are governed by and should be construed
-				in
-				accordance with, English law. Each party agrees that the courts of England will have exclusive jurisdiction in
-				relation to any claim, dispute or difference concerning this engagement letter and any matter arising from it on
-				any basis. Each party irrevocably waives any right to object to any action being brought in those courts, to
-				claim
-				that the action has been brought in an inappropriate forum, or to claim that those courts do not have
-				jurisdiction.</p>
-		
-		<p>1.2We will not accept
-				responsibility if you act on advice previously given by us without first confirming with us that the advice is
-				still valid in light of any change in the law or in your circumstances. We will accept no liability for losses
-				arising from changes in the law, or the interpretation thereof, that occur after the date on which the advice is
-				given.</p>
-		
-		<ol start="2">
+			<ol>
+				<li>Our engagement letter, the
+					schedules of services and our standard terms and conditions of business are governed by and should be
+					construed
+					in
+					accordance with, English law. Each party agrees that the courts of England will have exclusive jurisdiction in
+					relation to any claim, dispute or difference concerning this engagement letter and any matter arising from it
+					on
+					any basis. Each party irrevocably waives any right to object to any action being brought in those courts, to
+					claim
+					that the action has been brought in an inappropriate forum, or to claim that those courts do not have
+					jurisdiction.</li>
+
+				<li>We will not accept
+					responsibility if you act on advice previously given by us without first confirming with us that the advice is
+					still valid in light of any change in the law or in your circumstances. We will accept no liability for losses
+					arising from changes in the law, or the interpretation thereof, that occur after the date on which the advice
+					is
+					given.</li>
+			</ol>
 			<li>Client identification</li>
-		</ol>
-		<ol start="1">
-			<li>As with other professional services firms, we are required to
+			<ol>
+				<li>As with other professional services firms, we are required to
 					identify our clients for the purposes of the UK anti-money laundering legislation. We may request from you,
 					and
 					retain, such information and documentation as we require for these purposes and/or make searches of
 					appropriate
 					databases. If we are not able to obtain satisfactory evidence of your identity, we will not be able to proceed
 					with the engagement.</li>
-		</ol>
-		
-		<ol start="2">
-			<li>If you undertake business that requires you to be supervised by
+				<li>If you undertake business that requires you to be supervised by
 					an
 					appropriate supervisory authority to follow anti-money laundering regulations including if you accept or make
 					a
 					high value cash payments of &euro;10,000 or more (or equivalent in any currency) in exchange for goods you
 					should inform us.</li>
-		</ol>
-		
-		<ol start="3">
-			<li>Any personal data received from you to comply with our
+				<li>Any personal data received from you to comply with our
 					obligations
 					under The Money Laundering, Terrorist Financing and Transfer for Funds (Information on the Payer) Regulations
 					2017 (MLR 2017) will be processed only for the purposes of preventing money laundering or terrorist financing.
 					No other use will be made of this personal data unless use of the data is permitted by or under enactment
 					other
 					than the MLR 2017, or we have obtained the consent of the data subject to the proposed use of the data.
-			</li>
-		</ol>
-		
-		
-		<ol start="3">
-			<li id="h.i43sycgbb6m6">Commissions or other benefits</li>
-		</ol>
-		<ol start="1">
-			<li>In some circumstances, we may receive commissions or other
+				</li>
+			</ol>
+			<li>Commissions or other benefits</li>
+			<ol>
+				<li>In some circumstances, we may receive commissions or other
 					benefits
 					for introductions to other professionals or in respect of transactions which we arrange for you. </li>
-		</ol>
-		
-		<ol start="1">
-			<li>If this happens, we will notify you in writingof the amount and terms of payment and receipt of any such
+				<li>If this happens, we will notify you in writingof the amount and terms of payment and receipt of any such
 					commissions or benefits. The same will apply if the payment is made to, or the transactions are arranged by
 					one
 					of our associates. The fees you would otherwise pay will not be reduced by the amount of the commissions or
 					benefits. You agree that we or our associates, can retain the commission or other benefits without being
 					liable
 					to account to you for any such amounts. </li>
-		</ol>
-		
-		<ol start="1">
-			<li>If in the future, abnormally large commissions (for example more
+				<li>If in the future, abnormally large commissions (for example more
 					than double the largest amount in 4.3) are received which were not envisaged when the engagement letter was
 					signed, we will obtain specific consent to the retention of those commissions.</li>
-		</ol>
-		
-		<ol start="4">
+			</ol>
 			<li>Confidentiality</li>
-		</ol>
-		<ol start="1">
-			<li>Unless we are authorised by you to disclose information on your
+			<ol>
+				<li>Unless we are authorised by you to disclose information on your
 					behalf,
 					we confirm that if you give us confidential information we will, at all times during and after this
 					engagement,
 					keep it confidential, except as required by law or as provided for in regulatory, ethical or other
 					professional
 					pronouncements applicable to us or our engagement. </li>
-		</ol>
-		
-		<ol start="2">
-			<li>You agree that, if we act for other clients who are or who become your
+				<li>You agree that, if we act for other clients who are or who become your
 					competitors, to comply with our duty of confidentiality it will be sufficient for us to take such steps as we
 					think appropriate to preserve the confidentiality of information given to us by you, both during and after
 					this
 					engagement. These may include taking the same or similar steps as we take in respect of the confidentiality of
 					our own information.</li>
-		</ol>
-		
-		<ol start="3">
-			<li>In addition, if we act for other clients whose interests are or may be
+				<li>In addition, if we act for other clients whose interests are or may be
 					adverse to yours, we will manage the conflict by implementing additional safeguards to preserve
 					confidentiality.
 					Safeguards may include measures such as separate teams, physical separation of teams, and separate
 					arrangements
 					for storage of, and access to, information. </li>
-		</ol>
-		
-		<ol start="4">
-			<li>You agree that the effective implementation of such steps or
+				<li>You agree that the effective implementation of such steps or
 					safeguards
 					as described above will provide adequate measures to avoid any real risk of confidentiality being
 					impaired.</li>
-		</ol>
-		
-		<ol start="5">
-			<li>We may, on occasion, subcontract work on your affairs to other tax or
+				<li>We may, on occasion, subcontract work on your affairs to other tax or
 					accounting professionals. The subcontractors will be bound by our client confidentiality terms. </li>
-		</ol>
-		
-		<ol start="6">
-			<li>We will inform you of the proposed use of a subcontractor before they
+				<li>We will inform you of the proposed use of a subcontractor before they
 					commence work, except where your data will not be transferred out of our systems and the subcontractor is
 					bound
 					by confidentiality terms equivalent to an employee.</li>
-		</ol>
-		
-		<ol start="7">
-			<li>If we use external or cloud-based systems, we will ensure
+				<li>If we use external or cloud-based systems, we will ensure
 					confidentiality of your information is maintained.</li>
-		</ol>
-		
-		<ol start="8">
-			<li>This applies in addition to our obligations on data protection in
+				<li>This applies in addition to our obligations on data protection in
 					section [6]</li>
-		</ol>
-		
-		<ol start="5">
+			</ol>
 			<li>Conflicts of interest</li>
-		</ol>
-		<p>5.1We will inform you if we
-				become
-				aware of any conflict of interest in our relationship with you or in our relationship with you and another
-				client,
-				unless we are unable to do so because of our confidentiality obligations. We have safeguards that can be
-				implemented to protect the interests of different clients if a conflict arises. If conflicts are identified
-				which
-				cannot be managed in a way that protects your interests, we regret that we will be unable to provide further
-				services.</p>
-		
-		<p>5.2If there is a conflict of
-				interest that is capable of being addressed successfully by the adoption of suitable safeguards to protect your
-				interests, we will adopt those safeguards. In resolving the conflict, we would be guided by ICAEW&rsquo;s Code
-				of
-				Ethics, which can be viewed at <a href="https://www.icaew.com/en/membership/regulations-standards-and-guidance/ethics">icaew.com/en/membership/regulations-standards-and-guidance/ethics</a>. During and after our engagement, you agree that we reserve the right to act for other clients whose
-				interests are or may compete with, or be adverse to, yours subject, of course, to our obligations of
-				confidentiality and the safeguards set out in the paragraph on confidentiality above.</p>
-		
-		
-		<ol start="6">
+			<ol>
+				<li>We will inform you if we
+					become
+					aware of any conflict of interest in our relationship with you or in our relationship with you and another
+					client,
+					unless we are unable to do so because of our confidentiality obligations. We have safeguards that can be
+					implemented to protect the interests of different clients if a conflict arises. If conflicts are identified
+					which
+					cannot be managed in a way that protects your interests, we regret that we will be unable to provide further
+					services.</li>
+
+				<li>If there is a conflict of
+					interest that is capable of being addressed successfully by the adoption of suitable safeguards to protect
+					your
+					interests, we will adopt those safeguards. In resolving the conflict, we would be guided by ICAEW&rsquo;s Code
+					of
+					Ethics, which can be viewed at <a
+						href="https://www.icaew.com/en/membership/regulations-standards-and-guidance/ethics">icaew.com/en/membership/regulations-standards-and-guidance/ethics</a>.
+					During and after our engagement, you agree that we reserve the right to act for other clients whose
+					interests are or may compete with, or be adverse to, yours subject, of course, to our obligations of
+					confidentiality and the safeguards set out in the paragraph on confidentiality above.</li>
+			</ol>
 			<li>Data Protection</li>
-		</ol>
-		<ol start="1">
-			<li id="h.umo3q8fo9ke8">In this clause [6], the following definitions
+			<ol>
+				<li>In this clause [6], the following definitions
 					shall
 					apply:<br>&lsquo;client personal data&rsquo; means any personal data provided to us by you, or on your behalf,
 					for the purpose of providing our services to you, pursuant to our engagement letter with you;<br>&lsquo;data
@@ -275,117 +260,86 @@
 					<br>&lsquo;UK GDPR&rsquo; means the Data Protection Act 2018 as amended by the Data Protection, Privacy and
 					Electronic Communications (Amendments etc) (EU Exit) Regulations 2020; and<br>&lsquo;PECR&rsquo; means the
 					Privacy and Electronic Communications (EC Directive) Regulations 2003 (SI 2426/2003) as amended by the Data
-					Protection, Privacy and Electronic Communications (Amendments etc) (EU Exit) Regulations 2020.</li>
-		</ol>
-		
-		<ol start="2">
-			<li>We shall each be considered an independent data controller in
+					Protection, Privacy and Electronic Communications (Amendments etc) (EU Exit) Regulations 2020.
+				</li>
+				<li>We shall each be considered an independent data controller in
 					relation
 					to the client personal data. Each of us will comply with all requirements and obligations applicable to us
 					under
 					the data protection legislation in respect of the client personal data.</li>
-		</ol>
-		
-		<ol start="3">
-			<li>You shall only disclose client personal data to us where: <br>
-			</li>
-		</ol>
-		<ol start="1">
-			<li>you have provided the necessary information to the relevant data
-					subjects regarding its use (and you may use or refer to our privacy notice for this purpose);<br></li>
-			<li>you have a lawful basis upon which to do so, which, in the absence of
-					any other lawful basis, shall be with the relevant data subject&rsquo;s consent; and <br></li>
-			<li>you have complied with the necessary requirements under the data
-					protection legislation to enable you to do so.</li>
-		</ol>
-		
-		<ol start="4">
-			<li>Should you require any further details regarding our treatment of
+				<li>You shall only disclose client personal data to us where:
+					<ol>
+						<li>you have provided the necessary information to the relevant data
+							subjects regarding its use (and you may use or refer to our privacy notice for this purpose);<br></li>
+						<li>you have a lawful basis upon which to do so, which, in the absence of
+							any other lawful basis, shall be with the relevant data subject&rsquo;s consent; and <br></li>
+						<li>you have complied with the necessary requirements under the data
+							protection legislation to enable you to do so.</li>
+					</ol>
+				</li>
+				<li>Should you require any further details regarding our treatment of
 					personal data, please contact our Data Protection Manager.</li>
-		</ol>
-		
-		<ol start="5">
-			<li>We shall only process the client personal data: <br></li>
-		</ol>
-		<ol start="1">
-			<li>in order to provide our services to you and perform any other
-					obligations in accordance with our engagement with you; <br></li>
-		</ol>
-		<ol start="4">
-			<li>in order to comply with our legal or regulatory obligations; and
-					<br></li>
-			<li>where it is necessary for the purposes of our legitimate interests
-					and
-					those interests are not overridden by the data subjects&rsquo; own privacy rights. Our privacy notice contains
-					further details as to how we may process client personal data.</li>
-		</ol>
-		
-		<ol start="6">
-			<li>For the purpose of providing our services to you, we may disclose the
+				<li>We shall only process the client personal data:
+					<ol>
+						<li>in order to provide our services to you and perform any other
+							obligations in accordance with our engagement with you;</li>
+						<li>in order to comply with our legal or regulatory obligations; and</li>
+						<li>where it is necessary for the purposes of our legitimate interests
+							and
+							those interests are not overridden by the data subjects&rsquo; own privacy rights. Our privacy notice contains
+							further details as to how we may process client personal data.</li>
+					</ol>
+				</li>
+				<li>For the purpose of providing our services to you, we may disclose the
 					client personal data to members of our firm&rsquo;s network, our regulatory bodies or other third parties (for
 					example, our professional advisors or service providers). The third parties to whom we disclose such personal
 					data may be located outside of the United Kingdom. We will only disclose client personal data to a third party
 					(including a third party outside of the UK) provided that the transfer is undertaken in compliance with the
 					data
 					protection legislation.</li>
-		</ol>
-		
-		<ol start="7">
-			<li>We shall maintain commercially reasonable and appropriate security
+				<li>We shall maintain commercially reasonable and appropriate security
 					measures, including administrative, physical and technical safeguards, to protect against unauthorised or
 					unlawful processing of the client personal data and against accidental loss or destruction of, or damage to,
 					the
 					client personal data.</li>
-		</ol>
-		
-		<ol start="8">
-			<li>In respect of the client personal data, provided that we are legally
-					permitted to do so, we shall promptly notify you in the event that:<br></li>
-		</ol>
-		<p>a)we receive a request, from or on
-				behalf of a relevant data subject, to exercise their data subject rights under the data protection legislation
-				or
-				a complaint or any adverse correspondence in respect of our processing of their personal data;<br></p>
-		<p>b) we are served with an information,
-				enforcement or assessment notice (or any similar notices), or receive any other material communication in
-				respect
-				of our processing of the client personal data from the Information Commissioner&rsquo;s Office or any other
-				supervisory authority); or<br></p>
-		<p>c) we reasonably believe that there
-				has
-				been any incident which resulted in the accidental or unauthorised access to, or destruction, loss, unauthorised
-				disclosure or alteration of, the client personal data.</p>
-		
-		<ol start="9">
-			<li>Upon the reasonable request of the other, we shall each co-operate
+				<li>In respect of the client personal data, provided that we are legally
+					permitted to do so, we shall promptly notify you in the event that:
+					<ol>
+					<li>we receive a request, from or on
+						behalf of a relevant data subject, to exercise their data subject rights under the data protection legislation
+						or
+						a complaint or any adverse correspondence in respect of our processing of their personal data;</li>
+					<li> we are served with an information,
+						enforcement or assessment notice (or any similar notices), or receive any other material communication in
+						respect
+						of our processing of the client personal data from the Information Commissioner&rsquo;s Office or any other
+						supervisory authority; or</li>
+					<li>we reasonably believe that there
+						has
+						been any incident which resulted in the accidental or unauthorised access to, or destruction, loss, unauthorised
+						disclosure or alteration of, the client personal data.</li>
+					</ol>
+				</li>
+				<li>Upon the reasonable request of the other, we shall each co-operate
 					with
 					the other and take such reasonable commercial steps or provide such information as is necessary to enable each
 					of us to comply with the data protection legislation in respect of the services provided to you in accordance
 					with our engagement letter with you in relation to those services.</li>
-		</ol>
-		
-		<ol start="7">
+			</ol>
 			<li>Disengagement</li>
-		</ol>
-		<ol start="1">
-			<li>If we resign, or are asked to resign, we will normally issue a
+			<ol>
+				<li>If we resign, or are asked to resign, we will normally issue a
 					disengagement letter to ensure that our respective responsibilities are clear. If we have no contact with you
 					for a period of 12 months or more, we may issue to your last known address a disengagement letter and
 					thereafter
 					cease to act.</li>
-		</ol>
-		
-		<ol start="8">
+			</ol>
 			<li>Electronic and other communication</li>
-		</ol>
-		<ol start="1">
-			<li>Unless you instruct us otherwise, we may, if appropriate, communicate
+			<ol>
+				<li>Unless you instruct us otherwise, we may, if appropriate, communicate
 					with you and with third parties by email or other electronic means. The recipient is responsible for virus
 					checking emails and any attachments.</li>
-		</ol>
-		
-		<ol start="2">
-			<li>With electronic communication, there is a risk of non-receipt,
+				<li>With electronic communication, there is a risk of non-receipt,
 					delayed
 					receipt, inadvertent misdirection or interception by third parties. We use virus-scanning software to reduce
 					the
@@ -398,156 +352,104 @@
 					costs. If you do not wish to accept these risks, please let us know and we will communicate by paper mail,
 					other
 					than when electronic submission is mandatory.</li>
-		</ol>
-		
-		<ol start="3">
-			<li>Any communication by us with you sent through the postal system is
+				<li>Any communication by us with you sent through the postal system is
 					deemed to arrive at your postal address two working days after the day the document was sent.</li>
-		</ol>
-		
-		<ol start="9">
+			</ol>
 			<li>Fees and payment terms</li>
-		</ol>
-		<ol start="1">
-			<li>Our fees may depend, not only upon the time spent on your affairs,
+			<ol>
+				<li>Our fees may depend, not only upon the time spent on your affairs,
 					but
 					also on the level of skill and responsibility and the importance and value of the advice we provide, as well
 					as
 					the level of risk.</li>
-		</ol>
-		
-		<ol start="2">
-			<li>If we provide you with an estimate of our fees for any specific work,
+				<li>If we provide you with an estimate of our fees for any specific work,
 					the estimate will not be contractually binding unless we explicitly state that will be the case. Otherwise,
 					our
 					fees will be calculated on the basis of the hours worked by each member of staff necessarily engaged on your
 					affairs, multiplied by their charge-out rate per hour, VAT being charged thereon. Indicative hourly charge-out
-					rates are as follows:</li>
-		</ol>
-		<p>Partner&pound;250</p>
-		<p>Consultant&pound;100</p>
-		<ol start="3">
-			<li>If requested, we may indicate a fixed fee for the provision of
+					rates are as follows:
+					<ol>
+						<li>Partner: &pound;250</li>
+						<li>Consultant: &pound;100</li>
+					</ol>
+				</li>
+				<li>If requested, we may indicate a fixed fee for the provision of
 					specific
 					services or an indicative range of fees for a particular assignment. It is not our practice to identify fixed
 					fees for more than a year ahead as such fee quotes need to be reviewed in the light of events. If it becomes
 					apparent to us, due to unforeseen circumstances, that a fee quote is inadequate, we reserve the right to
 					notify
 					you of a revised figure or range and to seek your agreement thereto.</li>
-		</ol>
-		
-		<ol start="4">
-			<li>In some cases, you may be entitled to assistance with your
+				<li>In some cases, you may be entitled to assistance with your
 					professional
 					fees, particularly in relation to any investigation into your tax affairs by HMRC. Assistance may be provided
 					through insurance policies you hold or via membership of a professional or trade body. Other than where such
 					insurance was arranged through us, you will need to advise us of any such insurance cover you have. You will
 					remain liable for our fees regardless of whether all or part are liable to be paid by your insurers.
-			</li>
-		</ol>
-		
-		<ol start="5">
-			<li>We will bill monthly and our invoices will be due for payment within
+				</li>
+				<li>We will bill monthly and our invoices will be due for payment within
 					14
 					days of issue. Our fees are exclusive of VAT which will be added where it is chargeable. Any disbursements we
 					incur on your behalf, and expenses incurred in the course of carrying out our work for you, will be added to
 					our
 					invoices where appropriate.</li>
-		</ol>
-		
-		<ol start="6">
-			<li>Unless otherwise agreed to the contrary, our fees do not include the
+				<li>Unless otherwise agreed to the contrary, our fees do not include the
 					costs of any third party, counsel or other professional fees. If these costs are incurred to fulfil our
 					engagement, such necessary additional charges may be payable by you.</li>
-		</ol>
-		
-		<ol start="7">
-			<li>It is our normal practice to ask clients to pay by monthly direct
+				<li>It is our normal practice to ask clients to pay by monthly direct
 					debit
 					and periodically to adjust the monthly payment by reference to actual billings.</li>
-		</ol>
-		
-		<ol start="8">
-			<li>We reserve the right to charge interest on late paid invoices at the
+				<li>We reserve the right to charge interest on late paid invoices at the
 					rate of 8% above bank base rates under the Late Payment of Commercial Debts (Interest) Act 1998. We also
 					reserve
 					the right to suspend our services or to cease to act for you, having given written notice, if payment of any
 					fees is unduly delayed. We intend to exercise these rights only if it is fair and reasonable to do so.
-			</li>
-		</ol>
-		
-		<ol start="9">
-			<li>If you do not accept that an invoiced fee is fair and reasonable, you
+				</li>
+				<li>If you do not accept that an invoiced fee is fair and reasonable, you
 					must notify us within 21 days of receipt, failing which, you will be deemed to have accepted that payment is
 					due.</li>
-		</ol>
-		
-		<ol start="10">
-			<li>If a client company, trust or other entity is unable or unwilling to
+				<li>If a client company, trust or other entity is unable or unwilling to
 					settle our fees, we reserve the right to seek payment from the individual (or parent company) giving us
 					instructions on behalf of the client, and we shall be entitled to enforce any sums due against the group
 					company
 					or individual nominated to act for you.</li>
-		</ol>
-		
-		<ol start="10">
+			</ol>
 			<li>Help us to give you the best service</li>
-		</ol>
-		<ol start="1">
-			<li>We are committed to providing you with a high-quality service that is
+			<ol>
+				<li>We are committed to providing you with a high-quality service that is
 					both efficient and effective. If, at any point you would like to discuss with us how our service to you could
 					be
 					improved, or if you are dissatisfied with the service you are receiving, please let us know by contacting us.
 				</li>
-		</ol>
-		
-		<ol start="2">
-			<li>We will consider carefully any complaint you may make about our
+				<li>We will consider carefully any complaint you may make about our
 					service
 					as soon as we receive it and do all we can to explain the position to you. We will acknowledge your letter
 					within five business days of its receipt and endeavour to deal with your complaint within eight weeks.
-			</li>
-		</ol>
-		
-		<ol start="3">
-			<li>If we do not answer your complaint to your satisfaction, you may, of
+				</li>
+				<li>If we do not answer your complaint to your satisfaction, you may, of
 					course, take up the matter with our professional body, ICAEW.</li>
-		</ol>
-		
-		
-		<ol start="11">
+			</ol>
 			<li>Intellectual property rights and use of our name</li>
-		</ol>
-		<ol start="1">
-			<li>We will retain all intellectual property rights in any document
+			<ol>
+				<li>We will retain all intellectual property rights in any document
 					prepared by us during the course of carrying out the engagement except where the law specifically states
 					otherwise.</li>
-		</ol>
-		
-		<ol start="2">
-			<li>You are not permitted to use our name in any statement or document
+				<li>You are not permitted to use our name in any statement or document
 					you
 					may issue unless our prior written consent has been obtained. The only exception to this restriction would be
 					statements or documents that, in accordance with applicable law, are to be made public.</li>
-		</ol>
-		
-		
-		<ol start="12">
+			</ol>
 			<li>Interpretation</li>
-		</ol>
-		<ol start="1">
-			<li>If any provision of our engagement letter or terms of business is
+			<ol>
+				<li>If any provision of our engagement letter or terms of business is
 					held
 					to be void, that provision will be deemed not to form part of this contract. In the event of any conflict
 					between these terms of business and the engagement letter or appendices, the relevant provision in the
 					engagement letter or schedules will take precedence.</li>
-		</ol>
-		
-		<ol start="13">
+			</ol>
 			<li>Internal disputes within a client</li>
-		</ol>
-		<ol start="1">
-			<li>If we become aware of a dispute between the parties who own the
+			<ol>
+				<li>If we become aware of a dispute between the parties who own the
 					business or who are in some way involved in its ownership and management, it should be noted that our client
 					is
 					the business and we would not provide information or services to one party without the express knowledge and
@@ -558,37 +460,28 @@
 					back to the board of directors/the partnership and take no further action until the board/partnership has
 					agreed
 					the action to be taken.</li>
-		</ol>
-		
-		<ol start="14">
+			</ol>
 			<li>Investment advice (including insurance distribution services)
 			</li>
-		</ol>
-		<ol start="1">
-			<li>Investment business is regulated by the Financial Services and
+			<ol>
+				<li>Investment business is regulated by the Financial Services and
 					Markets
 					Act 2000. If, during the provision of professional services to you, you need advice on investments, including
 					insurances, we may have to refer you to someone who is authorised by the Financial Conduct Authority or
 					licensed
 					by a Designated Professional Body, as we are not. </li>
-		</ol>
-		
-		<ol start="15">
+			</ol>
 			<li>Lien</li>
-		</ol>
-		<ol start="1">
-			<li>Insofar as we are permitted to so by law or by professional
+			<ol>
+				<li>Insofar as we are permitted to so by law or by professional
 					guidelines,
 					we reserve the right to exercise a lien over all funds, documents and records in our possession relating to
 					all
 					engagements for you until all outstanding fees and disbursements are paid in full.</li>
-		</ol>
-		
-		<ol start="16">
+			</ol>
 			<li>Limitation of third party rights</li>
-		</ol>
-		<ol start="1">
-			<li>The advice and information we provide to you as part of our service
+			<ol>
+				<li>The advice and information we provide to you as part of our service
 					is
 					for your sole use, and not for any third party to whom you may communicate it, unless we have expressly agreed
 					in the engagement letter that a specified third party may rely on our work. We accept no responsibility to
@@ -599,84 +492,64 @@
 					is
 					the only person who has the right to enforce any of its terms, and no rights or benefits are conferred on any
 					third party under the Contracts (Rights of Third Parties) Act 1999.</li>
-		</ol>
-		
-		<ol start="17">
+			</ol>
 			<li>Period of engagement and termination </li>
-		</ol>
-		<ol start="1">
-			<li>Unless otherwise agreed in our engagement letter, our work will begin
+			<ol>
+				<li>Unless otherwise agreed in our engagement letter, our work will begin
 					when we receive implicit or explicit acceptance of that letter. Except as stated in that letter, we will not
 					be
 					responsible for periods before that date.</li>
-		</ol>
-		
-		<ol start="2">
-			<li>Each of us may terminate our agreement by giving not less than 21
+				<li>Each of us may terminate our agreement by giving not less than 21
 					days&rsquo; notice in writing to the other party except if you fail to cooperate with us or we have reason to
 					believe that you have provided us or HMRC with misleading information, in which case we may terminate this
 					agreement immediately. Termination will be without prejudice to any rights that may have accrued to either of
 					us
 					before termination.</li>
-		</ol>
-		
-		<ol start="3">
-			<li>We reserve the right to terminate the engagement between us with
+				<li>We reserve the right to terminate the engagement between us with
 					immediate effect in the event of: your insolvency, bankruptcy or other arrangement being reached with
 					creditors;
 					an independence issue or change in the law which means we can no longer act; failure to pay our fees by the
 					due
 					dates; or either party being in breach of their obligations if this is not corrected within 30 days of being
 					asked to do so.</li>
-		</ol>
-		
-		<ol start="4">
-			<li>In the event of termination of our contract, we will endeavour to
+				<li>In the event of termination of our contract, we will endeavour to
 					agree
 					with you the arrangements for the completion of work in progress at that time, unless we are required for
 					legal
 					or regulatory reasons to cease work immediately. In that event, we will not be required to carry out further
 					work and shall not be responsible or liable for any consequences arising from termination.</li>
-		</ol>
-		
-		<ol start="18">
+			</ol>
 			<li>Professional rules and statutory obligations</li>
-		</ol>
-		<ol start="1">
-			<li>We will observe and act in accordance with the Bye-laws, regulations
+			<ol>
+				<li>We will observe and act in accordance with the Bye-laws, regulations
 					and Code of Ethics of ICAEW including Professional Conduct in Relation to Taxation and will accept
 					instructions
 					to act for you on this basis. In particular, you give us the authority to correct errors made by HMRC if we
 					become aware of them. We will not be liable for any loss, damage or cost arising from our compliance with
 					statutory or regulatory obligations. You can see copies of these requirements in our offices. The requirements
-					are also available online at <a href="http://www.icaew.com/en/membership/regulations-standards-and-guidance">icaew.com/en/membership/regulations-standards-and-guidance</a>.</li>
-		</ol>
-		
-		<ol start="19">
+					are also available online at <a
+						href="http://www.icaew.com/en/membership/regulations-standards-and-guidance">icaew.com/en/membership/regulations-standards-and-guidance</a>.
+				</li>
+			</ol>
 			<li>Quality control</li>
-		</ol>
-		<ol start="1">
-			<li>As part of our ongoing commitment to provide a quality service, our
+			<ol>
+				<li>As part of our ongoing commitment to provide a quality service, our
 					files are periodically reviewed by an independent regulatory or quality control body. These reviewers are
 					highly
 					experienced professionals and are bound by the same rules of confidentiality as our principals.</li>
-		</ol>
-		
-		<ol start="2">
-			<li>When dealing with HMRC on your behalf we are required to be honest
+				<li>When dealing with HMRC on your behalf we are required to be honest
 					and
 					to take reasonable care to ensure that your returns are correct. To enable us to do this, you are required to
 					be
 					honest with us and to provide us with all necessary information in a timely manner. For more information about
-					&lsquo;Your Charter&rsquo; for your dealings with HMRC, visit <a href="https://www.gov.uk/government/publications/hmrc-charter">https://www.gov.uk/government/publications/hmrc-charter</a>. To the best of our abilities, we will ensure that HMRC meet their side of the Charter in their
+					&lsquo;Your Charter&rsquo; for your dealings with HMRC, visit <a
+						href="https://www.gov.uk/government/publications/hmrc-charter">https://www.gov.uk/government/publications/hmrc-charter</a>.
+					To the best of our abilities, we will ensure that HMRC meet their side of the Charter in their
 					dealings with you.</li>
-		</ol>
-		
-		<ol start="20">
+			</ol>
 			<li>Reliance on advice</li>
-		</ol>
-		<ol start="1">
-			<li>We will endeavour to record all advice on important matters in
+			<ol>
+				<li>We will endeavour to record all advice on important matters in
 					writing.
 					Advice given orally is not intended to be relied upon unless confirmed in writing. Therefore, if we provide
 					oral
@@ -685,87 +558,79 @@
 					on that advice, you must ask for the advice to be confirmed by us in writing. Advice is valid as at the date
 					it
 					was given.</li>
-		</ol>
-		
-		<ol start="21">
+			</ol>
 			<li>Retention of papers</li>
-		</ol>
-		<ol start="1">
-			<li>You have a legal responsibility to retain documents and records
+			<ol>
+				<li>You have a legal responsibility to retain documents and records
 					relevant to your financial affairs. During the course of our work we may collect information from you and
 					others
 					relevant to your tax and financial affairs. We will return any original documents to you. Documents and
 					records
 					relevant to your tax affairs are required by law to be retained as follows:</li>
-		</ol>
-		<h3>Individuals, trustees and partnerships:</h3>
-		<ol start="1">
-			<li>with trading or rental income: five years and 10 months after the end
-					of the tax year</li>
-			<li>otherwise: 22 months after the end of the tax year.</li>
-		</ol>
-		<h3>Companies, Limited Liability Partnerships, and other corporate entities:
-		</h3>
-		<ol start="3">
-			<li>six years from the end of the accounting period.</li>
-		</ol>
-		
-		<ol start="2">
-			<li>Although certain documents may legally belong to you, we may destroy
+				<li>Individuals, trustees and partnerships:
+					<ol>
+						<li>with trading or rental income: five years and 10 months after the end
+							of the tax year</li>
+						<li>otherwise: 22 months after the end of the tax year.</li>
+					</ol>
+				</li>
+				<li>Companies, Limited Liability Partnerships, and other corporate entities:
+					<ol>
+						<li>six years from the end of the accounting period.</li>
+					</ol>
+				</li>
+				<li>Although certain documents may legally belong to you, we may destroy
 					correspondence and other papers that we store electronically or otherwise that are more than seven years old,
 					except documents we think may be of continuing significance. You must tell us if you wish us to keep any
 					document for any longer period. </li>
-		</ol>
-		
-		<ol start="22">
+			</ol>
 			<li>The Provision of Services Regulations 2009</li>
-		</ol>
-		<ol start="1">
-			<li>Our professional indemnity insurer is Marsh Commercial, of
+			<ol>
+				<li>Our professional indemnity insurer is Marsh Commercial, of
 					Castlemead,
 					Lower Castle Street, Bristol, BS1 3AG. The territorial coverage is worldwide, excluding professional business
 					carried out from an office in the United States of America or Canada, and excludes any action for a claim
 					brought in any court in the United States or Canada.</li>
-		</ol>
-		
-		<ol start="23">
+			</ol>
 			<li>Timing of our services </li>
-		</ol>
-		<ol start="1">
-			<li>If you provide us with all information and explanations on a timely
+			<ol>
+				<li>If you provide us with all information and explanations on a timely
 					basis in accordance with our requirements, we will plan to undertake the work within a reasonable period of
 					time
 					to meet any regulatory deadlines. However, failure to complete our services before any such regulatory
 					deadline
 					would not, of itself, mean that we are liable for any penalty or additional costs arising.<br></li>
+			</ol>
 		</ol>
-		
+
 		<h2>PRIVACY NOTICE</h2>
-		<ol start="1">
+		<ol>
 			<li>
 				<h2 style="display:inline">ABOUT US AND THE PURPOSE OF THIS NOTICE</h2>
 				<p>Cedar Bloom Accounting (&quot;we&quot;, &ldquo;us&rdquo;, &ldquo;our&rdquo; and
-						&ldquo;ours&rdquo;) is an accountancy and tax advisory firm. We are registered in England and Wales as a
-						partnership under number: 8057873780 and our registered office is at 86 Harvard Road, Sandhurst, GU47 0UR.
-					
+					&ldquo;ours&rdquo;) is an accountancy and tax advisory firm. We are registered in England and Wales as a
+					partnership under number: 8057873780 and our registered office is at 86 Harvard Road, Sandhurst, GU47 0UR.
+
 				</p>
 				<p>This notice will tell you how we look after your personal data, about your privacy
-						rights, and about our compliance with and your protections under Data Protection Legislation.</p>
+					rights, and about our compliance with and your protections under Data Protection Legislation.</p>
 				<p>In this notice &ldquo;Data Protection Legislation&rdquo; means any applicable law
-						relating to the processing, privacy, and use of Personal Data, including the Data Protection Act 2018 and the
-						Privacy and Electronic Communications (EC Directive) Regulations 2003, as amended by The Data Protection,
-						Privacy
-						and Electronic Communications (Amendments etc) (EU Exit) Regulations 2020. </p>
+					relating to the processing, privacy, and use of Personal Data, including the Data Protection Act 2018 and the
+					Privacy and Electronic Communications (EC Directive) Regulations 2003, as amended by The Data Protection,
+					Privacy
+					and Electronic Communications (Amendments etc) (EU Exit) Regulations 2020. </p>
 				<p>For the purpose of the Data Protection Legislation and this notice, we are the
-						&lsquo;data controller&rsquo;. This means that we are responsible for deciding how we hold and use personal data
-						about you. We are required under the Data Protection Legislation to notify you of the information contained in
-						this privacy notice.</p>
+					&lsquo;data controller&rsquo;. This means that we are responsible for deciding how we hold and use personal
+					data
+					about you. We are required under the Data Protection Legislation to notify you of the information contained in
+					this privacy notice.</p>
 				<p>We have appointed a Data Protection Manager. Our Data Protection Manager is our Data
-						Protection Point of Contact and is responsible for assisting with enquiries in relation to this privacy notice
-						or
-						our treatment of your personal data. Should you wish to contact our Data Protection Point of Contact you can do
-						so
-						using the contact details noted at paragraph 10(Contact Us), below.</p>
+					Protection Point of Contact and is responsible for assisting with enquiries in relation to this privacy notice
+					or
+					our treatment of your personal data. Should you wish to contact our Data Protection Point of Contact you can
+					do
+					so
+					using the contact details noted at paragraph 10(Contact Us), below.</p>
 			</li>
 			<li>
 				<h2 style="display:inline">THE KIND OF INFORMATION WE HOLD ABOUT YOU </h2>
@@ -773,7 +638,7 @@
 				<ul>
 					<li>your personal details (such as your name and/or address);</li>
 					<li>details of contact we have had with you in relation to the provision,
-							or the proposed provision, of our services;</li>
+						or the proposed provision, of our services;</li>
 					<li>details of any services you have received from us;</li>
 					<li>our correspondence and communications with you;</li>
 					<li>information about any complaints and enquiries you make to us;
@@ -785,90 +650,91 @@
 				<p>We obtain your personal data directly from you when: </p>
 				<ul>
 					<li>you request a proposal from us in respect of the services we
-							provide;</li>
+						provide;</li>
 					<li>you engage us to provide our services and also during the provision
-							of
-							those services;</li>
+						of
+						those services;</li>
 					<li>you contact us by email, telephone, post (for example when you have a
-							query about our services);</li>
+						query about our services);</li>
 				</ul>
 				<p>We may also obtain your personal data indirectly:</p>
 				<ul>
 					<li>from your employer/our client when it engages us to provide services
-							and also during the provision of those services</li>
+						and also during the provision of those services</li>
 					<li>from third parties and/or publicly available resources (for example,
-							from your employer or from Companies House). </li>
+						from your employer or from Companies House). </li>
 				</ul>
 			</li>
 			<li>
 				<h2 style="display:inline">HOW WE USE PERSONAL DATA WE HOLD ABOUT YOU</h2>
 				<p>We may process your personal data for purposes necessary for the performance of our
-						contract with you/your employer/our clients and to comply with our legal obligations. This may include
-						processing
-						your personal data where you are an employee, subcontractor, supplier or customer of our client.</p>
+					contract with you/your employer/our clients and to comply with our legal obligations. This may include
+					processing
+					your personal data where you are an employee, subcontractor, supplier or customer of our client.</p>
 				<p>We may also process your personal data for the purposes of our own legitimate
-						interests
-						provided that those interests do not override any of your own interests, rights and freedoms which require the
-						protection of personal data. This includes processing for marketing, business development, statistical and
-						management purposes.</p>
+					interests
+					provided that those interests do not override any of your own interests, rights and freedoms which require the
+					protection of personal data. This includes processing for marketing, business development, statistical and
+					management purposes.</p>
 				<p>Please note that we may process your personal data for more than one lawful basis
-						depending on the specific purpose for which we are using your data.</p>
+					depending on the specific purpose for which we are using your data.</p>
 				<h3>Situations in which we will use your personal data</h3>
 				<p>We may use your personal data in order to:</p>
-				
+
 				<ul>
 					<li>carry out our obligations arising from any agreements entered into
-							between you/your employer/our clients and us (which will most usually be for the provision of our
-							services);</li>
+						between you/your employer/our clients and us (which will most usually be for the provision of our
+						services);</li>
 					<li>carry out our obligations arising from any agreements entered
-							into
-							between our clients and us (which will most usually be for the provision of our services) where you may be a
-							subcontractor, supplier or customer of our client;</li>
+						into
+						between our clients and us (which will most usually be for the provision of our services) where you may be a
+						subcontractor, supplier or customer of our client;</li>
 					<li>provide you with information related to our services and our events
-							or
-							seek your thoughts and opinions on the services we provide; and</li>
+						or
+						seek your thoughts and opinions on the services we provide; and</li>
 					<li>notify you about any changes to our services.</li>
 				</ul>
-				
+
 				<p>In some circumstances we may anonymise or pseudonymise the personal data so that it
-						can
-						no longer be associated with you, in which case we may use it without further notice to you.</p>
+					can
+					no longer be associated with you, in which case we may use it without further notice to you.</p>
 				<p>We may also process your personal data without your knowledge or consent, in
-						accordance
-						with this notice, where we are legally required or permitted to do so.</p>
+					accordance
+					with this notice, where we are legally required or permitted to do so.</p>
 				<h3>Data retention</h3>
 				<p>We will only retain your personal data for as long as is necessary to fulfil the
-						purposes for which it is collected. </p>
+					purposes for which it is collected. </p>
 				<p>When assessing what retention period is appropriate for your personal data, we take
-						into consideration the requirements of our business and the services provided, any statutory or legal
-						obligations
-						and the purposes for which we originally collected the personal data.</p>
+					into consideration the requirements of our business and the services provided, any statutory or legal
+					obligations
+					and the purposes for which we originally collected the personal data.</p>
 				<h3>Change of purpose</h3>
 				<p>Where we need to use your personal data for a reason, other than the purpose for
-						which
-						we originally collected it, we will only use your personal data where that reason is compatible with the
-						original
-						purpose. If we need to use your data for a new purpose, we will notify you and communicate our legal basis for
-						this new processing.</p>
+					which
+					we originally collected it, we will only use your personal data where that reason is compatible with the
+					original
+					purpose. If we need to use your data for a new purpose, we will notify you and communicate our legal basis for
+					this new processing.</p>
 			</li>
 			<li>
 				<h2 style="display:inline">DATA SHARING</h2>
 				<p>We will share your personal data with third parties where we are required by law,
-						where
-						it is necessary to administer the relationship between us, or where we have another legitimate interest in doing
-						so. This may include sharing your personal data with a regulator or to otherwise comply with the law.</p>
+					where
+					it is necessary to administer the relationship between us, or where we have another legitimate interest in
+					doing
+					so. This may include sharing your personal data with a regulator or to otherwise comply with the law.</p>
 				<p>&ldquo;Third parties&rdquo; includes third-party service providers and the members of
-						our firm&rsquo;s network. The following activities are carried out by third-party service providers: IT and
-						cloud
-						services, professional advisory services, administration services, marketing services and banking
-						services. We only permit our third-party service
-						providers to process your personal data for specified purposes and in accordance with our instructions
+					our firm&rsquo;s network. The following activities are carried out by third-party service providers: IT and
+					cloud
+					services, professional advisory services, administration services, marketing services and banking
+					services. We only permit our third-party service
+					providers to process your personal data for specified purposes and in accordance with our instructions
 				</p>
 				<p>We may share your personal data with other third parties, for example in the context
-						of
-						the possible sale or restructuring of the business. We may also need to share your personal data with a
-						regulator
-						or to otherwise comply with the law.</p>
+					of
+					the possible sale or restructuring of the business. We may also need to share your personal data with a
+					regulator
+					or to otherwise comply with the law.</p>
 			</li>
 			<li>
 				<h2 style="display:inline">TRANSFERRING PERSONAL DATA OUTSIDE THE UNITED KINGDOM (UK)
@@ -877,106 +743,109 @@
 				</p>
 				<p><br>DATA SECURITY</p>
 				<p>We have put in place commercially reasonable and appropriate security measures to
-						prevent your personal data from being accidentally lost, used or accessed in an unauthorised way, altered or
-						disclosed. In addition, we limit access to your personal data to those employees, agents, contractors and other
-						third parties who have a business need to know. They will only process your personal data on our instructions
-						and
-						they are subject to a duty of confidentiality.</p>
+					prevent your personal data from being accidentally lost, used or accessed in an unauthorised way, altered or
+					disclosed. In addition, we limit access to your personal data to those employees, agents, contractors and
+					other
+					third parties who have a business need to know. They will only process your personal data on our instructions
+					and
+					they are subject to a duty of confidentiality.</p>
 				<p>We have put in place procedures to deal with any suspected data security breach and
-						will notify you and any applicable regulator of a suspected breach where we are legally required to do
-						so.
+					will notify you and any applicable regulator of a suspected breach where we are legally required to do
+					so.
 				</p>
 			</li>
 			<li>
 				<h2 style="display:inline">RIGHTS OF ACCESS, CORRECTION, ERASURE, AND RESTRICTION</h2>
 				<h3>Your duty to inform us of changes</h3>
 				<p>It is important that the personal data we hold about you is accurate and current.
-						Should your personal information change, please notify us of any changes of which we need to be made aware by
-						contacting us, using the contact details below. </p>
+					Should your personal information change, please notify us of any changes of which we need to be made aware by
+					contacting us, using the contact details below. </p>
 				<h3>Your rights in connection with personal data</h3>
 				<p>Under certain circumstances, by law you have the right to:</p>
 				<ul>
 					<li>Request access to your personal data. This enables you to receive
-							details of the personal data we hold about you and to check that we are processing it lawfully.</li>
+						details of the personal data we hold about you and to check that we are processing it lawfully.</li>
 					<li>Request correction of the personal data that we hold about you.
-						
+
 					</li>
 					<li>Request erasure of your personal data. This enables you to ask us to
-							delete or remove personal data where there is no good reason for us continuing to process it. You also have
-							the
-							right to ask us to delete or remove your personal data where you have exercised your right to object to
-							processing (see below).</li>
-					<li>Object to processing of your personal data where we are relying on a
-							legitimate interest (or those of a third party) and there is something about your particular situation which
-							makes you want to object to processing on this basis. You also have the right to object where we are
-							processing
-							your personal information for direct marketing purposes. </li>
-					<li>Request the restriction of processing of your personal data. This
-							enables you to ask us to suspend the processing of personal data about you, for example if you want us to
-							establish its accuracy or the reason for processing it.</li>
-					<li>Request the transfer of your personal data to you or another data
-							controller if the processing is based on consent, carried out by automated means and this is technically
-							feasible.</li>
-				</ul>
-				
-				<p>If you want to exercise any of the above rights, please email our Data Protection
-						Point
-						of Contact info@cedarbloomaccounting.co.uk.</p>
-				<p>You will not have to pay a fee to access your personal data (or to exercise any of
+						delete or remove personal data where there is no good reason for us continuing to process it. You also have
 						the
-						other rights). However, we may charge a reasonable fee for the administrative costs of complying with the
-						request
-						if your request for access is manifestly unfounded or excessive. Alternatively, we may refuse to comply with the
-						request in such circumstances.</p>
-				
+						right to ask us to delete or remove your personal data where you have exercised your right to object to
+						processing (see below).</li>
+					<li>Object to processing of your personal data where we are relying on a
+						legitimate interest (or those of a third party) and there is something about your particular situation which
+						makes you want to object to processing on this basis. You also have the right to object where we are
+						processing
+						your personal information for direct marketing purposes. </li>
+					<li>Request the restriction of processing of your personal data. This
+						enables you to ask us to suspend the processing of personal data about you, for example if you want us to
+						establish its accuracy or the reason for processing it.</li>
+					<li>Request the transfer of your personal data to you or another data
+						controller if the processing is based on consent, carried out by automated means and this is technically
+						feasible.</li>
+				</ul>
+
+				<p>If you want to exercise any of the above rights, please email our Data Protection
+					Point
+					of Contact info@cedarbloomaccounting.co.uk.</p>
+				<p>You will not have to pay a fee to access your personal data (or to exercise any of
+					the
+					other rights). However, we may charge a reasonable fee for the administrative costs of complying with the
+					request
+					if your request for access is manifestly unfounded or excessive. Alternatively, we may refuse to comply with
+					the
+					request in such circumstances.</p>
+
 				<p>We may need to request specific information from you to help us confirm your identity
-						and ensure your right to access the information (or to exercise any of your other rights). This is another
-						appropriate security measure to ensure that personal information is not disclosed to any person who has no right
-						to receive it.</p>
+					and ensure your right to access the information (or to exercise any of your other rights). This is another
+					appropriate security measure to ensure that personal information is not disclosed to any person who has no
+					right
+					to receive it.</p>
 			</li>
 			<li>
 				<h2 style="display:inline">RIGHT TO WITHDRAW CONSENT</h2>
 				<p>In the limited circumstances where you may have provided your consent to the
-						collection, processing and transfer of your personal data for a specific purpose (for example, in relation to
-						direct marketing that you have indicated you would like to receive from us), you have the right to withdraw your
-						consent for that specific processing at any time. To withdraw your consent, please email our Data Protection
-						Point
-						of Contact info@cedarbloomaccounting.co.uk.</p>
+					collection, processing and transfer of your personal data for a specific purpose (for example, in relation to
+					direct marketing that you have indicated you would like to receive from us), you have the right to withdraw
+					your
+					consent for that specific processing at any time. To withdraw your consent, please email our Data Protection
+					Point
+					of Contact info@cedarbloomaccounting.co.uk.</p>
 				<p>Once we have received notification that you have withdrawn your consent, we will no
-						longer process your personal information (personal data) for the purpose or purposes you originally agreed to,
-						unless we have another legitimate basis for doing so in law.</p>
+					longer process your personal information (personal data) for the purpose or purposes you originally agreed to,
+					unless we have another legitimate basis for doing so in law.</p>
 			</li>
 			<li>
 				<h2 style="display:inline">CHANGES TO THIS NOTICE</h2>
 				<p>Any changes we may make to our privacy notice in the future will be provided to you
-						via
-						email. </p>
+					via
+					email. </p>
 				<p>This privacy notice was last updated on August 2025.</p>
 			</li>
 			<li>
-				<h2 id="h.nhhcgrvmku5" style="display:inline">CONTACT US</h2>
+				<h2 style="display:inline">CONTACT US</h2>
 				<p>If you have any questions regarding this notice or if you would like to speak to us
-						about the manner in which we process your personal data, please email our Data
-						Protection Point of Contact info@cedarbloomaccounting.co.uk.</p>
+					about the manner in which we process your personal data, please email our Data
+					Protection Point of Contact info@cedarbloomaccounting.co.uk.</p>
 				<p>You also have the right to make a complaint to the Information
-						Commissioner&#39;s
-						Office (ICO), the UK supervisory authority for data protection issues, at any time. The ICO&rsquo;s contact
-						details are as follows:</p>
+					Commissioner&#39;s
+					Office (ICO), the UK supervisory authority for data protection issues, at any time. The ICO&rsquo;s contact
+					details are as follows:</p>
 				<p>Information Commissioner&#39;s Office<br>Wycliffe House<br>Water
-						Lane<br>Wilmslow<br>Cheshire<br>SK9 5AF</p>
+					Lane<br>Wilmslow<br>Cheshire<br>SK9 5AF</p>
 				<p>Telephone - 0303 123 1113 (local rate) or 01625 545 745</p>
-				
+
 				<p>Website - <a href="https://ico.org.uk/concerns">https://ico.org.uk/concerns</a>
 			</li>
 		</ol>
-		<hr/>
-		<p>Partners: Christina Chang-Taylor ACA &amp; Sanjay Kukar</p>
-		<p>86 Harvard Road, Berkshire, GU47 0UR</p>
-		<p><a href="mailto:Info@Cedarbloomaccounting.com">info@cedarbloomaccounting.com</a></p>
-		<p><a
-					href="https://www.cedarbloomaccounting.com">www.cedarbloomaccounting.com</a>
+		<hr />
+		<p>Partners: Christina Chang-Taylor ACA &amp; Sanjay Kukar<br />
+			86 Harvard Road, Berkshire, GU47 0UR<br />
+			<a href="mailto:Info@Cedarbloomaccounting.com">Info@Cedarbloomaccounting.com</a><br />
+			<a href="https://www.cedarbloomaccounting.com">www.cedarbloomaccounting.com</a><br />
+			07399 582 959
 		</p>
-		<p>07399 582 959</p>
 	</main>
 </body>
 
