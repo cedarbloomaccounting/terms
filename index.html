@@ -53,12 +53,12 @@
 			padding: 0 1rem;
 		}
 
-		h1 {
+		h1, h2 {
 			font-size: 1.8rem;
 			margin-bottom: 1rem;
 		}
 
-		h2 {
+		h3 {
 			margin-top: 2rem;
 			font-size: 1.3rem;
 			color: #2b403e;
@@ -68,30 +68,82 @@
 			margin: 0.8rem 0;
 		}
 
-		ol {
+		ol:not([type="a"]):not([type="i"]) {
 			list-style-type: none;
 			counter-reset: item;
 			margin: 0;
+
+			& > li {
+				/* display: table; */
+				counter-increment: item;
+				margin-bottom: 0.6em;
+
+				&:has(h2)::before, &:has(h3)::before {
+					display: none;
+				}
+
+				& > li > ol>li:before {
+					content: counters(item, ".") " ";
+				}
+			}
+
+			& > li:before {
+				content: counters(item, ".") ". ";
+				/* display: table-cell;
+				padding-right: 0.6em; */
+			}
 		}
 
-		ol>li {
+		ol[type="a"] {
+			list-style-type: lower-alpha;
+			counter-reset: alpha-counter;
+			list-style: none;
+			padding-left: 0;
+
+			& > li:before {
+				counter-increment: alpha-counter;
+				content: counter(alpha-counter, lower-alpha) ". ";
+			}
+		}
+
+		ol[type="i"] {
+			list-style-type: lower-roman;
+			counter-reset: roman-counter;
+			list-style: none;
+
+			& > li:before {
+				counter-increment: roman-counter;
+				content: counter(roman-counter, lower-roman) ". ";
+			}
+		}
+
+		ol > li {
 			display: table;
-			counter-increment: item;
-			margin-bottom: 0.6em;
 		}
 
-		ol>li:before {
-			content: counters(item, ".") ". ";
+		ol > li:before {
 			display: table-cell;
 			padding-right: 0.6em;
 		}
 
-		li ol>li {
-			margin: 0;
+		li > ol > li {
+			margin: 1rem 0 0 0;
 		}
 
-		li ol>li:before {
-			content: counters(item, ".") " ";
+		li>span {
+			margin-left: 1rem;
+			display: block;
+			margin-top: 0.5rem;
+		}
+
+		li>span>span {
+			margin-left: 2rem;
+			display: block;
+			margin-top: 0.5rem;
+		}
+
+		li>span>ul>li {
+			margin-top: 0.5rem;
 		}
 
 		a {
@@ -630,7 +682,7 @@
 		</ol>
 
 		<h2>PRIVACY NOTICE</h2>
-		<ol>
+		<ol style="padding:0;">
 			<li>
 				<h2 style="display:inline">ABOUT US AND THE PURPOSE OF THIS NOTICE</h2>
 				<p>Cedar Bloom Accounting (&quot;we&quot;, &ldquo;us&rdquo;, &ldquo;our&rdquo; and
@@ -814,7 +866,7 @@
 
 				<p>If you want to exercise any of the above rights, please email our Data Protection
 					Point
-					of Contact info@cedarbloomaccounting.co.uk.</p>
+					of Contact <a href="mailto:info@cedarbloomaccounting.co.uk">info@cedarbloomaccounting.co.uk</a>.</p>
 				<p>You will not have to pay a fee to access your personal data (or to exercise any of
 					the
 					other rights). However, we may charge a reasonable fee for the administrative costs of complying with the
@@ -837,7 +889,7 @@
 					your
 					consent for that specific processing at any time. To withdraw your consent, please email our Data Protection
 					Point
-					of Contact info@cedarbloomaccounting.co.uk.</p>
+					of Contact <a href="mailto:info@cedarbloomaccounting.co.uk">info@cedarbloomaccounting.co.uk</a>.</p>
 				<p>Once we have received notification that you have withdrawn your consent, we will no
 					longer process your personal information (personal data) for the purpose or purposes you originally agreed to,
 					unless we have another legitimate basis for doing so in law.</p>
@@ -853,7 +905,7 @@
 				<h2 style="display:inline">CONTACT US</h2>
 				<p>If you have any questions regarding this notice or if you would like to speak to us
 					about the manner in which we process your personal data, please email our Data
-					Protection Point of Contact info@cedarbloomaccounting.co.uk.</p>
+					Protection Point of Contact <a href="mailto:info@cedarbloomaccounting.co.uk">info@cedarbloomaccounting.co.uk</a>.</p>
 				<p>You also have the right to make a complaint to the Information
 					Commissioner&#39;s
 					Office (ICO), the UK supervisory authority for data protection issues, at any time. The ICO&rsquo;s contact
